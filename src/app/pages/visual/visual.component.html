@@ -123,9 +123,9 @@
                     </div>
                     <hr>
                     <div style="margin-left: 17%" id="STPChartContainer">
-                        <div class="STPChartContainer0 col-md-6"></div>
-                        <div class="STPChartContainer1 col-md-6"></div>
-                        <div class="STPChartContainer2 col-md-6"></div>
+                        <div class="STPChartContainer0"></div>
+                        <div class="STPChartContainer1"></div>
+                        <div class="STPChartContainer2"></div>
                     </div>
                 </div>
                 <!-- train section  *ngIf="navActive=='usageChart'"-->
@@ -180,7 +180,10 @@
                         </div>
                     </div>
                     <hr>
-                    <div id="ganttChartContainer"></div>
+                    <!-- <div id="ganttChartContainer"></div> -->
+                    <div class="ganttChartStyle">
+                        <chart [options]="ganttChartObj"></chart>
+                    </div>
                 </div>
 
                 <!-- train section -->
